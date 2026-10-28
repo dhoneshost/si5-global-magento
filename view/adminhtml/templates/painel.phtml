@@ -1,0 +1,30 @@
+<?php
+/**
+ * @var \Si5\GlobalCatalog\Block\Adminhtml\Painel $block
+ * @var \Magento\Framework\Escaper $escaper
+ * @license OSL-3.0
+ */
+?>
+<?php if (!$block->isEnabled()): ?>
+    <p><?= $escaper->escapeHtml(__('SI5 Global is turned off or your role cannot use it.')) ?></p>
+<?php elseif (!$block->productId()): ?>
+    <p><?= $escaper->escapeHtml(__('Save the product to look it up by barcode.')) ?></p>
+<?php elseif (!$block->hasToken()): ?>
+    <p><?= $escaper->escapeHtml(__('Set the API token in')) ?>
+        <a href="<?= $escaper->escapeUrl($block->configUrl()) ?>"><?= $escaper->escapeHtml(__('Stores › Configuration › SI5 › SI5 Global')) ?></a>.</p>
+<?php else: ?>
+    <div class="si5g" data-si5g='<?= $escaper->escapeHtmlAttr(json_encode($block->jsConfig())) ?>'>
+        <button type="button" class="action-secondary si5g-consultar"><span><?= $escaper->escapeHtml(__('Look up in SI5 Global')) ?></span></button>
+        <p class="note si5g-nota"><?= $escaper->escapeHtml(__('Nothing is saved without your review. Only the barcode and the token are sent to SI5 Global.')) ?></p>
+        <div class="si5g-revisao" hidden>
+            <table class="admin__table-secondary si5g-tabela">
+                <thead><tr><th></th><th><?= $escaper->escapeHtml(__('Current')) ?></th><th><?= $escaper->escapeHtml(__('Suggested')) ?></th><th><?= $escaper->escapeHtml(__('Replace')) ?></th></tr></thead>
+                <tbody class="si5g-linhas"></tbody>
+            </table>
+            <p class="note si5g-ref"></p>
+            <button type="button" class="action-primary si5g-aplicar"><span><?= $escaper->escapeHtml(__('Apply ticked fields')) ?></span></button>
+            <button type="button" class="action-tertiary si5g-cancelar"><span><?= $escaper->escapeHtml(__('Cancel')) ?></span></button>
+        </div>
+        <div class="si5g-msg" role="status" aria-live="polite"></div>
+    </div>
+<?php endif; ?>

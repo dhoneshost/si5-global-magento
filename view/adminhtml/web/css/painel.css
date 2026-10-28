@@ -1,0 +1,10 @@
+/* SI5 Global - product form panel. @license OSL-3.0 */
+.si5g { margin: 0 0 2rem; }
+.si5g-nota { margin-top: .6rem; }
+.si5g-tabela { margin-top: 1.5rem; width: 100%; max-width: 900px; }
+.si5g-tabela th, .si5g-tabela td { vertical-align: middle; }
+.si5g-tabela tbody th { width: 9rem; }
+.si5g-marcar { text-align: center; width: 6rem; }
+.si5g-foto { max-width: 140px; max-height: 140px; border-radius: 4px; }
+.si5g-ref { margin: 1rem 0; }
+.si5g-msg.message { margin-top: 1.5rem; }

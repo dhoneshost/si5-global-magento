@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- Suggested pictures are shown in the review table straight from the SI5 Global image servers. @license OSL-3.0 -->
+<csp_whitelist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Csp:etc/csp_whitelist.xsd">
+    <policies>
+        <policy id="img-src">
+            <values>
+                <value id="si5global-cdn2" type="host">cdn2.si5.com.br</value>
+                <value id="si5global-cdn3" type="host">cdn3.si5.com.br</value>
+                <value id="si5global-site" type="host">global.si5.com.br</value>
+            </values>
+        </policy>
+    </policies>
+</csp_whitelist>

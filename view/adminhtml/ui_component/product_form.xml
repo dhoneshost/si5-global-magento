@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+  The "SI5 Global" attribute group (GTIN / EAN, NCM, CEST) becomes the "si5-global" fieldset of the product form;
+  the lookup panel goes inside it.
+  @license OSL-3.0
+-->
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <fieldset name="si5-global" sortOrder="15">
+        <settings>
+            <label translate="true">SI5 Global</label>
+            <collapsible>true</collapsible>
+            <opened>false</opened>
+        </settings>
+        <htmlContent name="si5global_painel" sortOrder="5">
+            <block class="Si5\GlobalCatalog\Block\Adminhtml\Painel" name="si5global.painel"/>
+        </htmlContent>
+    </fieldset>
+</form>

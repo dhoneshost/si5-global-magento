@@ -1,0 +1,22 @@
+{
+    "name": "si5/module-global-catalog",
+    "description": "Magento 2: fills product name, brand, weight, picture and Brazilian NCM/CEST from the barcode (EAN/UPC) using the SI5 Global catalogue, with review before saving.",
+    "type": "magento2-module",
+    "license": "OSL-3.0",
+    "keywords": ["magento2", "gtin", "ean", "barcode", "ncm", "cest", "brazil"],
+    "homepage": "https://github.com/dhoneshost/si5-global-magento",
+    "authors": [{ "name": "SI5", "homepage": "https://global.si5.com.br" }],
+    "require": {
+        "php": "~8.1.0||~8.2.0||~8.3.0||~8.4.0",
+        "ext-curl": "*",
+        "ext-gd": "*",
+        "magento/framework": "^103.0",
+        "magento/module-catalog": "^104.0",
+        "magento/module-eav": "^102.1",
+        "magento/module-config": "^101.2"
+    },
+    "autoload": {
+        "files": ["registration.php"],
+        "psr-4": { "Si5\\GlobalCatalog\\": "" }
+    }
+}
