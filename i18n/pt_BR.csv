@@ -50,7 +50,7 @@
 "picture","foto"
 "weight","peso"
 "API","API"
-"Fills product name, brand, weight, picture, NCM and CEST from the barcode, always with a review in the product page before saving. Create an account and an API token at global.si5.com.br (free plan: 100 lookups per day). Only the barcode and this token are sent to the API.","Completa nome, marca, peso, foto, NCM e CEST do produto pelo código de barras, sempre com revisão na página do produto antes de gravar. Crie uma conta e um token em global.si5.com.br (plano grátis: 100 consultas por dia). Só o código de barras e este token vão para a API."
+"Fills product name, brand, weight, picture, NCM and CEST from the barcode, always with a review in the product page before saving. Create an account and an API token at global.si5.com.br (the free plan has a daily lookup quota). Only the barcode and this token are sent to the API.","Completa nome, marca, peso, foto, NCM e CEST do produto pelo código de barras, sempre com revisão na página do produto antes de gravar. Crie uma conta e um token em global.si5.com.br (o plano grátis tem uma cota diária de consultas). Só o código de barras e este token vão para a API."
 "Show in the product page","Mostrar na página do produto"
 "API token","Token da API"
 "SI5 Global: complete products by barcode","SI5 Global: completar produtos pelo código de barras"

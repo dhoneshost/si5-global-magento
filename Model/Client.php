@@ -15,7 +15,7 @@ use Magento\Framework\Exception\LocalizedException;
 
 class Client
 {
-    public const VERSION = '1.0.0';
+    public const VERSION = '1.0.1';
     private const API = 'https://global.si5.com.br/api/produtos/';
     private const IMAGE_HOSTS = ['global.si5.com.br', 'cdn2.si5.com.br', 'cdn3.si5.com.br'];
     private const JSON_LIMIT = 262144;

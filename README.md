@@ -43,7 +43,7 @@ bin/magento cache:flush
 
 Ou copie os arquivos para `app/code/Si5/GlobalCatalog` e rode os quatro comandos `bin/magento` acima.
 
-Depois, crie uma conta e um token em global.si5.com.br (*Minha conta*); o plano gratuito permite 100 consultas por dia. Cole o token em *Lojas › Configuração › SI5 › SI5 Global*.
+Depois, crie uma conta e um token em global.si5.com.br (*Minha conta*); o plano gratuito tem uma cota diária de consultas (veja os limites de cada plano em global.si5.com.br). Cole o token em *Lojas › Configuração › SI5 › SI5 Global*.
 
 Permissões (*Sistema › Permissões › Perfis*): "SI5 Global: completar produtos pelo código de barras", dentro de *Catálogo › Produtos*.
 
